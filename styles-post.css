@@ -1,0 +1,108 @@
+.container{
+  display:grid;
+ /* Setup layout */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 300px 400px 1fr;
+    grid-template-rows: 200px auto auto;
+    grid-template-areas: 
+    "lg hd hd"
+    "main main sd"
+    "ft ft ft";
+    border: 10px solid white;
+
+}
+.smedia{
+  flex: 0 0 25px;
+  border: 1px solid red;
+  background: #F8FA9D;
+  }
+
+  .mmedia{
+    width: 25%;
+    border: 1px solid red;
+    background: black;
+    }
+    .namedate {
+      margin-bottom: 10px;
+    }
+
+  .namedate > p{
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .skipToMain{
+    font-size: 5px;
+  }
+  .logo {
+    display: flex;
+    background-color: black;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    grid-area:lg;
+  }
+.header {
+  display: flex;
+  background-color: black; 
+  font-family: sans-serif;
+  text-align: left;
+  text-emphasis-color: white;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  grid-area:hd;
+}
+
+.footer{
+  display: flex;
+  background-color: gray;
+  font-family: sans-serif;
+  gap: 1rem;
+  /* border: 1px solid white; */
+  grid-area:ft;  
+}
+.sidebar{
+  background-color:  brown; 
+  font-family: sans-serif;
+  color: white;
+  border: 1px solid white;
+  padding: 5%;
+  grid-area: sd;
+} 
+.content{
+  background-color: black; 
+  padding: 20px;
+  font-family: sans-serif;
+  color: white;
+  border: 1px solid white;
+  grid-area: main;
+}
+h3 {
+  font-size: 24px;
+  color: gold;
+}
+h1 {
+  font-size: 50px;
+  color: white;
+}
+h4 {
+  font-size: 20px;
+  color: white;
+}
+p {
+  font-size: 16px;
+  color: white;
+}
+img {
+  width: 100%;
+  border: 1px solid white;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 20%;
+}
